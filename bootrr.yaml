@@ -1,0 +1,10 @@
+metadata:
+  name: bootrr
+  description: "Boot regression testing (bootrr)"
+  environment:
+    - lava-test-shell
+
+run:
+  steps:
+    - export PATH="$PATH:$(pwd)/helpers"
+    - sh helpers/bootrr-auto
